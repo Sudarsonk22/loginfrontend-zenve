@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.reg-page {
+    min-height: 100vh;
+    width: 100%;
+    background: #F6F3EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.reg-page::after {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    right: -120px;
+    width: 420px;
+    height: 420px;
+    background: #3F6B4A;
+    border-radius: 50%;
+    opacity: 0.9;
+    z-index: 0;
+}
+
+
+
+.reg-wrapper {
+    display: flex;
+    max-width: 1080px;
+    width: 100%;
+    gap: 56px;
+    align-items: flex-start;
+    z-index: 1;
+    position: relative;
+}
+
+/* ---------- LEFT PANEL ---------- */
+
+.reg-left {
+    flex: 1;
+    min-width: 320px;
+}
+
+.reg-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.reg-brand-mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #2E4E36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.reg-brand-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #1F3327;
+}
+
+.reg-brand-tag {
+    font-size: 12px;
+    color: #6E7C71;
+    letter-spacing: 0.02em;
+}
+
+.reg-headline {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.15;
+    color: #1F3327;
+    margin: 0 0 14px 0;
+}
+
+.reg-sub {
+    font-size: 15px;
+    color: #5C6B5F;
+    line-height: 1.6;
+    max-width: 380px;
+    margin-bottom: 32px;
+}
+
+.reg-illustration {
+    width: 100%;
+    max-width: 400px;
+    height: 220px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #E4EEE0 0%, #CFE0C9 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reg-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 50%;
+    border-radius: 24px;
+    display: block;
+}
+
+.reg-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.reg-feature {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #2C3E30;
+    font-size: 14.5px;
+    font-weight: 500;
+}
+
+.reg-feature-icon {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 50%;
+    background: #3F6B4A;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- RIGHT CARD ---------- */
+
+.reg-card {
+    flex: 1.15;
+    min-width: 380px;
+    max-width: 460px;
+    background: #FFFFFF;
+    border-radius: 28px;
+    padding: 40px 40px 34px;
+    box-shadow: 0 24px 60px -20px rgba(31, 51, 39, 0.25);
+}
+
+.reg-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 6px;
+}
+
+.reg-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #E4EEE0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2E4E36;
+}
+
+.reg-card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #1F3327;
+    margin: 0;
+}
+
+.reg-card-sub {
+    font-size: 13.5px;
+    color: #8A968C;
+    margin: 4px 0 26px 58px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #33443A;
+    margin-bottom: 6px;
+}
+
+.form-group label svg {
+    width: 15px;
+    height: 15px;
+    color: #4E7C57;
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='password'] {
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    border: 1.5px solid #E4E4DE;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #1F3327;
+    background: #FCFBF9;
+    transition: border-color 0.15s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3F6B4A;
+    background: #fff;
+}
+
+.form-group input::placeholder {
+    color: #B3B8AE;
+}
+
+.form-group p {
+    color: #C0503D;
+    font-size: 12px;
+    margin: 5px 0 0 0;
+}
+
+.checkbox-label {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 10px;
+    font-weight: 500 !important;
+    color: #46554A !important;
+    cursor: pointer;
+    margin: 4px 0 22px 0;
+}
+
+.form-group input[type='checkbox'] {
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+    accent-color: #3F6B4A;
+    flex-shrink: 0;
+}
+
+.submit {
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(135deg, #4C7A54, #2E4E36);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: opacity 0.15s ease;
+}
+
+.submit:hover {
+    opacity: 0.92;
+}
+
+.submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.reg-login-link {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13.5px;
+    color: #6E7C71;
+}
+
+.reg-login-link a {
+    color: #2E4E36;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 880px) {
+    .reg-wrapper {
+        flex-direction: column;
+    }
+    .reg-left {
+        text-align: center;
+    }
+    .reg-brand, .reg-features {
+        align-items: center;
+    }
+    .reg-feature {
+        justify-content: center;
+    }
+    .reg-sub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .reg-card {
+        width: 100%;
+    }
+}
